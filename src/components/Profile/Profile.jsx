@@ -1,12 +1,12 @@
 import css from './Profile.module.css';
 
-export const Profile = ({ username, tag, location, stats }) => {
+export const Profile = ({ username, tag, location, stats, avatar }) => {
   return (
     <div className={css.profile}>
       <div className={css.description}>
         <img
           width={150}
-          src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+          src={avatar}
           alt="User avatar"
           className={css.avatar}
         />
