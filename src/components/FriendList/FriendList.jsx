@@ -17,10 +17,13 @@ export const FriendList = ({ friends }) => {
   );
 };
 
-// FriendList.propTypes = {
-//   username: PropTypes.string.isRequired,
-//   tag: PropTypes.string.isRequired,
-//   location: PropTypes.string.isRequired,
-//   avatar: PropTypes.string.isRequired,
-//   stats: PropTypes.objectOf(PropTypes.number),
-// };
+FriendListItem.propTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.exact({
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+        id: PropTypes.number.isRequired,
+    })
+  ),
+};
