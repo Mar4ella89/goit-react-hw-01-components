@@ -18,7 +18,7 @@ export const TransactionHistory = ({ items }) => {
             <td>{type}</td>
             <td>{amount}</td>
             <td>{currency}</td>
-          </tr>))};
+          </tr>))}
         </tbody>
       </table>
     );
