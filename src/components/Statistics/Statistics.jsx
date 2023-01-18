@@ -7,8 +7,6 @@ function randomBgColor() {
   );
 }
 
-// const bgColor = randomBgColor();
-
 export const Statistics = ({ title, stats }) => {
   return (
     <section className={css.statistics}>
